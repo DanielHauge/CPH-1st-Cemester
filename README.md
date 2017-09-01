@@ -11,7 +11,12 @@
 
 ## Usefull Links
 [Moodle](https://cphbusiness.mrooms.net/).
-[Broken Schedule](https://dk.timeedit.net/web/cphbusiness/db1/student/riqv6Q5cf2XZ4qQy7b75ZQ7061ZmZ3ZrQ5qYQYQQ7Yo7o.html).
+
+[Broken Schedule - (Timeedit)](https://dk.timeedit.net/web/cphbusiness/db1/student/riqv6Q5cf2XZ4qQy7b75ZQ7061ZmZ3ZrQ5qYQYQQ7Yo7o.html).
+
+[IT tutorials](https://www.cphbusiness.dk/guides)
+
+[Self-Service / Selvbetjening](https://selvbetjening.cphbusiness.dk/loggedin/default.aspx)
 
 
 ## Examination
