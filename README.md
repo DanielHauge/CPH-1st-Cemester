@@ -1,4 +1,4 @@
-# CPHBusiness Cemester Overview.
+# CPHBusiness 1st Cemester Overview.
 
 ## Work Repositories
 
