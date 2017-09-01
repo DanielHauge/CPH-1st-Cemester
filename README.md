@@ -26,6 +26,42 @@
 
 - [Outlook school mail](https://outlook.office.com)
 
+## Assignments (Study points)
+#### Large Systems Development:
+| Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
+| ------------- |:---------:|:-------------:|:-----------:|:---------:|
+| Requirements Analysis                          | 30/8  |  6/9 11:00 | 10! | Ongoing
+| Setup of CI/CD chain with MVP                  | 14/9  | 20/9 23:59 | 10! | Not started
+| Continiously Feature Development and Extension | 21/9  | N/A        | 20! | Not started
+| Handover of systems to drift                   | N/A   | 2/11       | 10! | Not started
+| Continiously Monitoring and Drift              | 2/11  | N/A        | 20! | Not started
+| Systems Monitoring (Prometheus)                | 9/11  | 15/11      | 10! | Not started
+| Add Event Logging                              | 16/11 | 22/11      | 10! | Not started
+| Add Scalability (Kubernetes)                   | 23/11 | 29/11      | **10?** | Not started
+| Add Security                                   | 30/11 | 6/12       | **10?** | Not started
+| Reflection and preparation of project report   | N/A   | 14.12      | 10! | Not started
+#### Discrete Mathematics:
+| Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
+| ------------- |:---------:|:-------------:|:-----------:|:---------:|
+| Logic               | 1/9   | 8/9 | 10 | **__DONE (not handed in)__**
+| Predicates          | 5/9   | N/A | 10 | Not started
+| Set Theory          | 26/9  | N/A | 10 | Not started
+| Regular Expressions | 3/10  | N/A | 20 | Not started
+| Sequences           | 7/11  | N/A | 10 | Not started 
+| Relations           | 14/11 | N/A | 10 | Not started
+| Static Analysis     | 21/11 | N/A | 15 | Not started
+| Design by Contract  | 28/11 | N/A | 15 | Not started
+#### System Integration:
+| Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
+| ------------- |:---------:|:-------------:|:-----------:|:---------:|
+| Loan Broker System Project | 20/9       | 23/10 23:59 | 70! | Not started
+| Minimum-Viable Blockchain  | after 8/11 | 22/12 23:59 | 30! | Not started
+#### UFO (Udvikling og Formidling:
+| Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
+| ------------- |:---------:|:-------------:|:-----------:|:---------:|
+| No assignments revealed | N/A | N/A | N/A |N/A
+
+
 
 ## Examination
  - [Examination Catalogue - Detailed Exam Info](https://efif.sharepoint.com/sites/cph/Lyngby/_layouts/15/guestaccess.aspx?docid=08359e3281bab4316ba686686597ccd1d&authkey=Ac1u0VczZABKH9DV3hOjgPg)
