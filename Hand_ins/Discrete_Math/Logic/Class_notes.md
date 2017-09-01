@@ -1,0 +1,38 @@
+http://sontrak.com/downloads.html
+Logic software. Good for truth-tables and logic schematics(redigeret)
+a->b = ~a v b
+de morgan: if not-ing a condition, then not all elements and invert the operator
+~(a v b ) = (~a)n(~b)
+
+assignment
+~(a->b) = ~(~a v b)
+Morgans low applied
+~(~a v b) = ~(~a) n ~(b)
+a n ~b
+
+Biconditional:
+a <-> b = a -> b n b -> a
+
+a <-> b = "a=b"
+goes both ways.
+
+a -> b = "a =< b"
+one implies the other, but 
+
+x1 = (a n b) n c                          c
+x2 = ~(a v b)
+x3 = ~a n b                                  ~(b->a)
+x4 = ~a
+x5 = a n ~b                                      ~(a->b)
+x6 = (a n ~b) v (~a n ~b)                ~b
+x7 = (a v b) n ~(a n b)                     ~(a <-> b)
+x8 = ~a v ~b     ~(a n b)
+
+X1 = a n b
+X2 = (~a n ~b) v (a n b)           a <-> b
+X3 = (a n b) v (~a n b)          b
+X4 = a -> b
+X5 = a
+X6 = ~(~a n b)                 b -> a
+X7 = ~a n ~b                    a v b
+X8 = (a n b) n t              t
