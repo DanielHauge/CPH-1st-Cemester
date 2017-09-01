@@ -1,7 +1,7 @@
 Exercise 3 for system integration intro: 
 ====================================
 ###### Kristian
-'''
+```
 call Customer order
 call SequenceTagger order orderChannel "/Order/@OrderID" 
 call Enricher orderChannel brevChannel
@@ -13,9 +13,9 @@ call Tee orderCompletedChannelTotal orderCompletedChannelTotal2 orderCompletedCh
 call Logger orderCompletedChannelTotal3
 call Aggregator orderCompletedChannelTotal2 orderCompletedChannel "/Item/@OrderID" 
 call Logger orderCompletedChannel(edited)
-'''
+```
 ###### Hauge
-'''
+```
 call customer orderChannel 
 call Logger CompleteChannel 
 call SequenceTagger orderChannel orderReadyChannel "/Order/@OrderID" 
@@ -26,4 +26,4 @@ call Router ItemChannel coldChannel "Item = 'FRAPPUCINO'" hotChannel
 call HotBevBarista hotChannel CompleteItemChannel 
 call ColdBevBarista coldChannel CompleteItemChannel 
 call Aggregator CompleteItemChannel CompleteChannel "/Item/@OrderID"
-'''
+```
