@@ -27,7 +27,7 @@
 - [Outlook school mail](https://outlook.office.com)
 
 ## Assignments (Study points)
-#### Large Systems Development:
+### Large Systems Development:
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
 | Requirements Analysis                          | 30/8  |  6/9 11:00 | 10! | Ongoing
@@ -40,7 +40,7 @@
 | Add Scalability (Kubernetes)                   | 23/11 | 29/11      | **10?** | Not started
 | Add Security                                   | 30/11 | 6/12       | **10?** | Not started
 | Reflection and preparation of project report   | N/A   | 14.12      | 10! | Not started
-#### Discrete Mathematics:
+### Discrete Mathematics:
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
 | Logic               | 1/9   | 8/9 | 10 | **__DONE (not handed in)__**
@@ -51,12 +51,12 @@
 | Relations           | 14/11 | N/A | 10 | Not started
 | Static Analysis     | 21/11 | N/A | 15 | Not started
 | Design by Contract  | 28/11 | N/A | 15 | Not started
-#### System Integration:
+### System Integration:
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
 | Loan Broker System Project | 20/9       | 23/10 23:59 | 70! | Not started
 | Minimum-Viable Blockchain  | after 8/11 | 22/12 23:59 | 30! | Not started
-#### UFO (Udvikling og Formidling:
+### UFO (Udvikling og Formidling:
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
 | No assignments revealed | N/A | N/A | N/A |N/A
