@@ -44,7 +44,7 @@
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
 | Logic               | 1/9   | 8/9 | 10 | DONE
-| Predicates          | 5/9   | N/A | 10 | Not started
+| Predicates          | 5/9   | N/A | 10 | Ongoing
 | Set Theory          | 26/9  | N/A | 10 | Not started
 | Regular Expressions | 3/10  | N/A | 20 | Not started
 | Sequences           | 7/11  | N/A | 10 | Not started 
