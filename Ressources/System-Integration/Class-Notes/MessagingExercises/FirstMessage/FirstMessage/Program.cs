@@ -2,34 +2,48 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Messaging;
 
-namespace Demo
+namespace FirstMessage
 {
-    class Demo
+    class Program
     {
         private MessageQueue mq;
-        public string myText = "Not initialized";
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello");
+
+            Program _This = new Program();
+            _This.GetChannel();
+            _This.Populate("Heaaallooo", "This person did it", "This is bodytext");
+            Console.ReadLine();
+            Console.WriteLine(_This.GetResult());
+            Console.ReadLine();
+
+        }
 
         private void GetChannel()
         {
-            if (MessageQueue.Exists(@".\Private$\MyQueue1"))
-                mq = new System.Messaging.MessageQueue(@".\Private$\MyQueue1");
+            if (MessageQueue.Exists(@".\Private$\FirstQue"))
+                mq = new System.Messaging.MessageQueue(@".\Private$\FirstQue");
             else
-                mq = MessageQueue.Create(@".\Private$\MyQueue1");
+                mq = MessageQueue.Create(@".\Private$\FirstQue");
 
             Console.WriteLine("Queue Created");
         }
 
-        private void Populate()
+        private void Populate(string myText, string Label, string BodyText)
         {
             Message msg = new Message();
-            myText = "Body text";
+            myText = BodyText;
             msg.Body = myText;
-            msg.Label = "Tine Marbjerg";
+            msg.Label = Label;
             mq.Send(msg);
-            Console.WriteLine("Posted in mq1");
+            Console.WriteLine("Posted in FirstQue");
         }
+
 
         private string GetResult()
         {
@@ -49,21 +63,6 @@ namespace Demo
             }
             Console.WriteLine("Received from " + label);
             return str;
-        }
-
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hi, iam a demo");
-            Demo d = new Demo();
-            d.GetChannel();
-            d.Populate();
-
-            string result = "";
-           //result = d.GetResult();
-
-            Console.WriteLine("  send: {0} ", d.myText);
-            Console.WriteLine("  receive: {0} ", result);
-            Console.ReadLine();
         }
     }
 }

@@ -118,6 +118,7 @@ namespace PlayerOne
 
    static void Main(string[] args)
     {
+            Console.WriteLine("Hello, this is Player 1");
         Program p = new Program();
         p.joinChannel();
         p.postHit();
