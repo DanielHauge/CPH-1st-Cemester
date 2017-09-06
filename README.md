@@ -1,5 +1,9 @@
 # CPHBusiness 1st Cemester Overview.
 
+## Tasks ¤Need work
+- System integration : Messaging exercises (Look in Course material & SI-classnotes)
+- Discrete math : Predicates program (Look in moodle for description)
+
 ## Work Repositories
 
 #### [Papers Repo](https://github.com/DanielHauge/CPHBusiness_Papers)
