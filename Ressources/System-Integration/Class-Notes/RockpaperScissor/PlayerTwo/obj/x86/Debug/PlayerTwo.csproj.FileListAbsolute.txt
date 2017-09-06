@@ -1,0 +1,9 @@
+C:\Users\tm\documents\visual studio 2010\Projects\PlayerOne\PlayerTwo\bin\Debug\PlayerTwo.exe
+C:\Users\tm\documents\visual studio 2010\Projects\PlayerOne\PlayerTwo\bin\Debug\PlayerTwo.pdb
+C:\Users\tm\documents\visual studio 2010\Projects\PlayerOne\PlayerTwo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\tm\documents\visual studio 2010\Projects\PlayerOne\PlayerTwo\obj\x86\Debug\PlayerTwo.exe
+C:\Users\tm\documents\visual studio 2010\Projects\PlayerOne\PlayerTwo\obj\x86\Debug\PlayerTwo.pdb
+C:\Users\tm\Documents\PBA\efterår 2014 SI\PlayerOne\PlayerTwo\obj\x86\Debug\PlayerTwo.exe
+C:\Users\tm\Documents\PBA\efterår 2014 SI\PlayerOne\PlayerTwo\obj\x86\Debug\PlayerTwo.pdb
+C:\Users\tm\Documents\PBA\efterår 2014 SI\PlayerOne\PlayerTwo\bin\Debug\PlayerTwo.exe
+C:\Users\tm\Documents\PBA\efterår 2014 SI\PlayerOne\PlayerTwo\bin\Debug\PlayerTwo.pdb

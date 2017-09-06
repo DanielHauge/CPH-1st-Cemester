@@ -1,0 +1,10 @@
+C:\Users\tm\documents\visual studio 2010\Projects\PlayerOne\PlayerOne\bin\Debug\PlayerOne.exe
+C:\Users\tm\documents\visual studio 2010\Projects\PlayerOne\PlayerOne\bin\Debug\PlayerOne.pdb
+C:\Users\tm\documents\visual studio 2010\Projects\PlayerOne\PlayerOne\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\tm\documents\visual studio 2010\Projects\PlayerOne\PlayerOne\obj\x86\Debug\PlayerOne.exe
+C:\Users\tm\documents\visual studio 2010\Projects\PlayerOne\PlayerOne\obj\x86\Debug\PlayerOne.pdb
+C:\Users\tm\Documents\PBA\efterår 2014 SI\PlayerOne\PlayerOne\obj\x86\Debug\PlayerOne.exe
+C:\Users\tm\Documents\PBA\efterår 2014 SI\PlayerOne\PlayerOne\obj\x86\Debug\PlayerOne.pdb
+C:\Users\tm\Documents\PBA\efterår 2014 SI\PlayerOne\PlayerOne\bin\Debug\PlayerOne.exe
+C:\Users\tm\Documents\PBA\efterår 2014 SI\PlayerOne\PlayerOne\bin\Debug\PlayerOne.pdb
+C:\Users\tm\Documents\PBA\efterår 2014 SI\PlayerOne\PlayerOne\obj\x86\Debug\PlayerOne.csprojResolveAssemblyReference.cache
