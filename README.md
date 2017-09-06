@@ -30,7 +30,7 @@
 ### Large Systems Development:
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
-| Requirements Analysis                          | 30/8  |  6/9 11:00 | 10! | Ongoing
+| Requirements Analysis                          | 30/8  |  6/9 11:00 | 10! | DONE
 | Setup of CI/CD chain with MVP                  | 14/9  | 20/9 23:59 | 10! | Not started
 | Continiously Feature Development and Extension | 21/9  | N/A        | 20! | Not started
 | Handover of systems to drift                   | N/A   | 2/11       | 10! | Not started
@@ -43,7 +43,7 @@
 ### Discrete Mathematics:
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
-| Logic               | 1/9   | 8/9 | 10 | **__DONE (not handed in)__**
+| Logic               | 1/9   | 8/9 | 10 | DONE
 | Predicates          | 5/9   | N/A | 10 | Not started
 | Set Theory          | 26/9  | N/A | 10 | Not started
 | Regular Expressions | 3/10  | N/A | 20 | Not started
