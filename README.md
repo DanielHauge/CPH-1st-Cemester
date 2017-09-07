@@ -4,6 +4,7 @@
 - System integration : Messaging exercises (Look in Course material & SI-classnotes)
 - Discrete math : Predicates program (Look in moodle for description)
 - Discrete math : assignemnt 1.1
+- Large System development : Vagrant server db + appli
 
 ## Work Repositories
 
