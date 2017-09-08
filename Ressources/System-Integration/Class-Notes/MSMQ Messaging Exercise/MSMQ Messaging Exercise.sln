@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSMQ Messaging Exercise", "MSMQ Messaging Exercise\MSMQ Messaging Exercise.csproj", "{640F5305-0E86-4E99-A0B4-BE5C900E6042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondPlayer", "SecondPlayer\SecondPlayer.csproj", "{2858D4D5-A126-4796-A49E-F1AF42E25EE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{640F5305-0E86-4E99-A0B4-BE5C900E6042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640F5305-0E86-4E99-A0B4-BE5C900E6042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640F5305-0E86-4E99-A0B4-BE5C900E6042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640F5305-0E86-4E99-A0B4-BE5C900E6042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2858D4D5-A126-4796-A49E-F1AF42E25EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2858D4D5-A126-4796-A49E-F1AF42E25EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2858D4D5-A126-4796-A49E-F1AF42E25EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2858D4D5-A126-4796-A49E-F1AF42E25EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4195C79D-90C4-4EDE-9A80-0F17D0C0745A}
+	EndGlobalSection
+EndGlobal

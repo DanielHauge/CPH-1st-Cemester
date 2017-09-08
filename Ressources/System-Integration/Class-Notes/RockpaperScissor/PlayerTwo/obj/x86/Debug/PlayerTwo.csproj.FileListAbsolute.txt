@@ -12,3 +12,9 @@ C:\Users\Daniel\Desktop\repo\CPH-1st-Cemester\Ressources\System-Integration\Clas
 C:\Users\Daniel\Desktop\repo\CPH-1st-Cemester\Ressources\System-Integration\Class-Notes\RockpaperScissor\PlayerTwo\obj\x86\Debug\PlayerTwo.csprojResolveAssemblyReference.cache
 C:\Users\Daniel\Desktop\repo\CPH-1st-Cemester\Ressources\System-Integration\Class-Notes\RockpaperScissor\PlayerTwo\obj\x86\Debug\PlayerTwo.exe
 C:\Users\Daniel\Desktop\repo\CPH-1st-Cemester\Ressources\System-Integration\Class-Notes\RockpaperScissor\PlayerTwo\obj\x86\Debug\PlayerTwo.pdb
+C:\Users\Animc\Desktop\Repos\CPH-1st-Cemester\Ressources\System-Integration\Class-Notes\RockpaperScissor\PlayerTwo\bin\Debug\PlayerTwo.exe
+C:\Users\Animc\Desktop\Repos\CPH-1st-Cemester\Ressources\System-Integration\Class-Notes\RockpaperScissor\PlayerTwo\bin\Debug\PlayerTwo.pdb
+C:\Users\Animc\Desktop\Repos\CPH-1st-Cemester\Ressources\System-Integration\Class-Notes\RockpaperScissor\PlayerTwo\obj\x86\Debug\PlayerTwo.csprojResolveAssemblyReference.cache
+C:\Users\Animc\Desktop\Repos\CPH-1st-Cemester\Ressources\System-Integration\Class-Notes\RockpaperScissor\PlayerTwo\obj\x86\Debug\PlayerTwo.csproj.CoreCompileInputs.cache
+C:\Users\Animc\Desktop\Repos\CPH-1st-Cemester\Ressources\System-Integration\Class-Notes\RockpaperScissor\PlayerTwo\obj\x86\Debug\PlayerTwo.exe
+C:\Users\Animc\Desktop\Repos\CPH-1st-Cemester\Ressources\System-Integration\Class-Notes\RockpaperScissor\PlayerTwo\obj\x86\Debug\PlayerTwo.pdb
