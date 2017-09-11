@@ -2,7 +2,6 @@
 
 ## Tasks ¤Need work
 - Discrete math : Predicates program (Look in moodle for description)
-- Large System development : Vagrant server db + appli
 
 ## Work Repositories
 
