@@ -2,6 +2,8 @@
 
 ## Tasks ¤Need work
 - Discrete math : Predicates program (Look in moodle for description)
+- System integration : RabbitMQ tutorials 1-3(rabbitmq get started), exercises 3 versions of student enrollment system.
+- System integration : Deploy own RabbitMQ server
 
 ## Work Repositories
 
