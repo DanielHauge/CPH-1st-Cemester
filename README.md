@@ -8,6 +8,7 @@
 ## Work Repositories
 
 #### [Papers Repo](https://github.com/DanielHauge/CPHBusiness_Papers)
+#### [HackerNews](https://github.com/DanielHauge/HackerNews-Grp8)
 
 ## Lecture Materials
 
