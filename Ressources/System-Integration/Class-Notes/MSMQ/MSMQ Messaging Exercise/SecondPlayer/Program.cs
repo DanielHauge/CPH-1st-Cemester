@@ -11,7 +11,7 @@ namespace MSMQ_Messaging_Exercise
     {
         private MessageQueue P1_P2;
         private MessageQueue P2_P1;
-        private enum GameHand { Rock, Paper, Scissor};
+        private enum GameHand { Rock, Paper, Scissor };
         private GameHand OpponentHand;
         private bool OpponentChose;
         private GameHand MyPlayingHand;
@@ -20,13 +20,12 @@ namespace MSMQ_Messaging_Exercise
 
         static void Main(string[] args)
         {
-            Program player1 = new Program() { WhoAmI = "Player1", Game_in_session = false };
-            player1.GetChannel();
-
+            Program player2 = new Program() { WhoAmI = "Player2", Game_in_session = false };
+            player2.GetChannel();
 
             while (true)
             {
-                Command(Console.ReadLine(), player1, player1.P1_P2, player1.P2_P1);
+                Command(Console.ReadLine(), player2, player2.P2_P1, player2.P1_P2);
             }
 
 
@@ -35,9 +34,9 @@ namespace MSMQ_Messaging_Exercise
 
         private static void Command(string v, Program player, MessageQueue Outgoing, MessageQueue Incomming)
         {
-            Console.WriteLine(" exit - play - randomhand - watch || Gamesession: "+player.Game_in_session);
+            Console.WriteLine(" exit - play - randomhand - watch || Gamesession: " + player.Game_in_session);
             switch (v)
-                {
+            {
                 case "exit":
                     System.Environment.Exit(0);
                     break;
@@ -46,19 +45,50 @@ namespace MSMQ_Messaging_Exercise
                     player.OpponentChose = false;
                     break;
                 case "randomhand":
-                    player.GetHand();
+                    player.MyPlayingHand = player.GetHand();
                     string s = player.LookInChannelForMessage(Incomming);
-                    if (s.Contains("Hand:")) {
+                    if (s.Contains("Hand:"))
+                    {
                         player.OpponentHand = player.GetHand(s.Split(':').Last());
                         player.Populate(Outgoing, player.GenerateConclusion(player.MyPlayingHand, player.OpponentHand), player.WhoAmI);
                     }
-                    else player.Populate(Outgoing, "Hand:"+player.MyPlayingHand.ToString(), player.WhoAmI); 
+                    else player.Populate(Outgoing, "Hand:"+player.MyPlayingHand.ToString(), player.WhoAmI);
+                    break;
+                case "paper":
+                    player.MyPlayingHand = player.GetHand("Paper");
+                    string s1 = player.LookInChannelForMessage(Incomming);
+                    if (s1.Contains("Hand:"))
+                    {
+                        player.OpponentHand = player.GetHand(s1.Split(':').Last());
+                        player.Populate(Outgoing, player.GenerateConclusion(player.MyPlayingHand, player.OpponentHand), player.WhoAmI);
+                    }
+                    else player.Populate(Outgoing, "Hand:" + player.MyPlayingHand.ToString(), player.WhoAmI);
+                    break;
+                case "scissor":
+                    player.MyPlayingHand = player.GetHand("Scissor");
+                    string s2 = player.LookInChannelForMessage(Incomming);
+                    if (s2.Contains("Hand:"))
+                    {
+                        player.OpponentHand = player.GetHand(s2.Split(':').Last());
+                        player.Populate(Outgoing, player.GenerateConclusion(player.MyPlayingHand, player.OpponentHand), player.WhoAmI);
+                    }
+                    else player.Populate(Outgoing, "Hand:" + player.MyPlayingHand.ToString(), player.WhoAmI);
+                    break;
+                case "rock":
+                    player.MyPlayingHand = player.GetHand("Rock");
+                    string s3 = player.LookInChannelForMessage(Incomming);
+                    if (s3.Contains("Hand:"))
+                    {
+                        player.OpponentHand = player.GetHand(s3.Split(':').Last());
+                        player.Populate(Outgoing, player.GenerateConclusion(player.MyPlayingHand, player.OpponentHand), player.WhoAmI);
+                    }
+                    else player.Populate(Outgoing, "Hand:" + player.MyPlayingHand.ToString(), player.WhoAmI);
                     break;
                 case "watch":
                     if (player.LookInChannelForMessage(Incomming).Contains("Conclusion:"))
-                        {
+                    {
                         player.Game_in_session = false;
-                        }
+                    }
                     break;
                 default:
                     Console.WriteLine("No valid command input");
@@ -90,7 +120,7 @@ namespace MSMQ_Messaging_Exercise
             return Conclusion;
         }
 
-            private void InitGame(MessageQueue mq, MessageQueue incomming)
+        private void InitGame(MessageQueue mq, MessageQueue incomming)
         {
             if (!Game_in_session)
             {
@@ -106,29 +136,32 @@ namespace MSMQ_Messaging_Exercise
                 }
             }
             else Console.WriteLine("Cannot Initialize game when a game is allready in session.");
-            
+
         }
 
 
         private GameHand GetHand()
         {
-            return (GameHand)new Random().Next(0, 2);
+            return (GameHand)new Random(DateTime.UtcNow.Millisecond).Next(0, 3);
         }
         private GameHand GetHand(string s)
         {
             if (s.Equals("Rock"))
             {
                 return GameHand.Rock;
-            } else if (s.Equals("paper"))
+            }
+            else if (s.Equals("Paper"))
             {
                 return GameHand.Paper;
-            } else if (s.Equals("scissor"))
+            }
+            else if (s.Equals("Scissor"))
             {
                 return GameHand.Scissor;
-            } else
+            }
+            else
             {
                 Console.WriteLine("Error: invalid string. Therefor giving random.");
-                return (GameHand)new Random().Next(0, 2);
+                return (GameHand)new Random(DateTime.UtcNow.Millisecond).Next(0, 3);
             }
 
         }
@@ -137,12 +170,13 @@ namespace MSMQ_Messaging_Exercise
             try
             {
                 return (GameHand)s;
-            } catch
+            }
+            catch
             {
                 Console.WriteLine("Error: out of bounds. parsing int to get hand needs to be either 0, 1 or 2. Therefor giving random.");
-                return (GameHand)new Random().Next(0, 2);
+                return (GameHand)new Random(DateTime.UtcNow.Millisecond).Next(0, 3);
             }
-            
+
         }
 
 
@@ -158,7 +192,7 @@ namespace MSMQ_Messaging_Exercise
                 P2_P1 = new System.Messaging.MessageQueue(@".\Private$\P2>P1");
             else
                 P2_P1 = MessageQueue.Create(@".\Private$\P2>P1");
-            
+
             Console.WriteLine("Queue Created");
         }
 
@@ -168,13 +202,12 @@ namespace MSMQ_Messaging_Exercise
             msg.Body = Message;
             msg.Label = who;
             mq.Send(msg);
-            Console.WriteLine("/////////////Posted message in: " + mq.QueueName.ToString() + " - Who: "+who+" - Message: "+Message);
+            Console.WriteLine("/// Posted message in: " + mq.QueueName.ToString() + " - Who: " + who + " - Message: " + Message);
         }
 
         private string LookInChannelForMessage(MessageQueue mq)
         {
-            if (mq.GetAllMessages().Length>0)
-            {
+            if (mq.GetAllMessages().Length > 0) {
                 Message msg;
                 string str = "";
                 string label = "";
@@ -189,14 +222,13 @@ namespace MSMQ_Messaging_Exercise
                 {
                     str = "Error in GetResult()";
                 }
-                Console.WriteLine("/////////////Received message in " + mq.QueueName.ToString() + " - From: " + label + " - Message: " + str);
+                Console.WriteLine("'\\\' Received message in " + mq.QueueName.ToString() + " - From: " + label + " - Message: " + str);
                 return str;
             }
             else return "MessageQue Was Empty";
         }
 
-     
-
+        
 
     }
 }
