@@ -25,16 +25,13 @@ Vagrant.configure("2") do |config|
     server.vm.hostname = "Artifactory"
     server.vm.provision "shell", inline: <<-SHELL
 	  sudo apt-get update
-      adduser builder
-	  usermod -aG sudo builder
-	  
-	  su - builder | mkdir ~/.ssh
-	  su - builder | chmod 700 ~/.ssh
-	  su - builder | echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC7DzLVB3BW4vlGumn7RSzNW0eEy9q2hU5hhbxPzcJvG4TfhnAZcCKzlNgJcEP9EMF/RTTQmLBh6EF73AyEP+Rh8dR3MDzRR6RkjAfc+r1ldk5c3x/UOfG7Gr8dw9cKxVmqVE9bMdRzrnozZTKB0nLggBilE62mZZrC2vrtJjhgiaVu26HYZwGt/707EpRCqBHZsJBIX5+pB0rIbJ1OOd2bO/NqJnAe7u1GtK2I+a0cu6uBrdQqUJcF4vYOpKSfwVrAl7mLUD/Qn37G8NU938XgaxR0E+XIodkfF4rmIqv6CjiTvo77msMLLbfCfMnxLRmxJ6ke+HowALPRMzvVgyNUrlNuytfbBOwDKxSlQgHseGxeS+tHchT5OmexWO5yvD2RISSoAe/UMef+q39EZ/+wqr1Cr4jjNVNx6UqiKa42VJpPd3+bb+0lSTr4QBTmXW/3SREHC83WqjrT6EvwltFVyrNoiDSs7+/jydCu/K7or11dyvOM31lPaqBowoRaQSSsEA22NjTuf9LMUeQ7WlTmdv7auoRrT1L9VV09rsZ+kwRA14pJilVDcnZTu5bZVuOg7Xi1Q+bsFYlpzo4FexascTQzsBA3MIXBF/36v9WQ4pu+eBQASAsS4m872NbNRglj3V80MdH3gix+/ZWzBX1p/WbXJmuny7YO8pKz3S1RWQ== Animcuil@gmail.com"> ~/.ssh/authorized_keys
-	  su - builder | chmod 600 ~/.ssh/authorized_keys
-	  su - builder | wget https://raw.githubusercontent.com/datsoftlyngby/soft2017fall-lsd-teaching-material/master/lecture_notes/05-Code_Infrastructure/remote/setup.sh
-	  su - builder | chmod u+x ./setup.sh
-	  su - builder | ./setup.sh
+	  mkdir ~/.ssh
+	  chmod 700 ~/.ssh
+	  echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDoqHjzR547kAzN2HsRxwuiipeLpAbyM9ZN8JMDg0DzzxsExqKZJC2txil//kKqsYRLEbK3ZoqXIaIYRkYmMYoFt7CQk34ZFY0WEA66lu+sKCFfCtk0pweRJCxkNY5nqb6aI/R7ON6aqtAtXlbTp4HGwwllVsuA7Ap4x5EMjo+RuIUdkhsKo6rTl+ty55i86mMTdxdY5pOsCZDLDqEV6zkyRfkYU7pxnfJLL0zFreEFtbH3JAN9d++RuVoKK5HKPlHpn0VjdmMs8xCrS45GmIQybC8P0t+//jLk9JBd48jWUL269JuthOUDZKaZD+XdULrvoIg4fLkPr74miKxfOA9TiSKMDTiInt9mnYVV26ce+JKg7tWFZ3Gnb+6WUBdwkS2IhGmw/NcpaMuSq2Ru7JXHJGO9EcQhjTg5ALX45Cv++mYzOZgis5EYzaZHBVw+sOphq2K7DosKc1Cv0XK1dvT1cfs2/0EQ+hb7IerP5NNV3Y+lrDPdo1AK+LPd3wX73ZCNhs3crJOJcApzPKlaOdGhG3Y+20wOGRAZYG8k4MPiCnW2vomhrgLY7fXjd1l+Pf4G+MLw2yHUPu3ILRFNaCGc83UJdP+TamkFU7yKisZXmjrNK2Is7GJxtpRJtEHKg6YZc/MJ6UwfNST3pW8SRxUTh5PEQlcTrj6XYRKc90RK2w== Animcuil@gmail.com"> ~/.ssh/authorized_keys
+	  chmod 600 ~/.ssh/authorized_keys
+	  wget https://raw.githubusercontent.com/datsoftlyngby/soft2017fall-lsd-teaching-material/master/lecture_notes/05-Code_Infrastructure/remote/setup.sh
+	  chmod u+x ./setup.sh
+	  ./setup.sh
 	  
     SHELL
   end
