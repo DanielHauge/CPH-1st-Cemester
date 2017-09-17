@@ -1,0 +1,44 @@
+
+
+Vagrant.configure("2") do |config|
+  config.vm.box = 'digital_ocean'
+  config.vm.box_url = "https://github.com/devopsgroup-io/vagrant-digitalocean/raw/master/box/digital_ocean.box"
+  config.ssh.private_key_path = '~/.ssh/id_rsa'
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+  #
+  config.vm.define "RabbitMQ", primary: true do |server|
+
+    server.vm.provider :digital_ocean do |provider|
+      provider.ssh_key_name = "Vagrant"
+      provider.token = '7c0c7cc33a161798d6f8ae829609c826c8237206a7b19ae7282da8e1cc609248'
+      provider.image = 'ubuntu-16-04-x64'
+      provider.region = 'fra1'
+      provider.size = '512mb'
+      provider.privatenetworking = true
+    end
+
+    server.vm.hostname = "RabbitMQ"
+    server.vm.provision "shell", inline: <<-SHELL
+		sudo apt-cache policy
+		echo 'deb http://www.rabbitmq.com/debian/ testing main' | sudo tee /etc/apt/sources.list.d/rabbitmq.list
+		wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -
+		sudo apt-get update
+		sudo apt-get install rabbitmq-server
+		sudo rabbitmq-plugins enable rabbitmq_management
+		
+		sudo rabbitmqctl add_user admin password
+		sudo rabbitmqctl set_user_tags admin administrator
+		sudo rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
+		
+		sudo chmod 700 ~/.ssh
+		sudo echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDoqHjzR547kAzN2HsRxwuiipeLpAbyM9ZN8JMDg0DzzxsExqKZJC2txil//kKqsYRLEbK3ZoqXIaIYRkYmMYoFt7CQk34ZFY0WEA66lu+sKCFfCtk0pweRJCxkNY5nqb6aI/R7ON6aqtAtXlbTp4HGwwllVsuA7Ap4x5EMjo+RuIUdkhsKo6rTl+ty55i86mMTdxdY5pOsCZDLDqEV6zkyRfkYU7pxnfJLL0zFreEFtbH3JAN9d++RuVoKK5HKPlHpn0VjdmMs8xCrS45GmIQybC8P0t+//jLk9JBd48jWUL269JuthOUDZKaZD+XdULrvoIg4fLkPr74miKxfOA9TiSKMDTiInt9mnYVV26ce+JKg7tWFZ3Gnb+6WUBdwkS2IhGmw/NcpaMuSq2Ru7JXHJGO9EcQhjTg5ALX45Cv++mYzOZgis5EYzaZHBVw+sOphq2K7DosKc1Cv0XK1dvT1cfs2/0EQ+hb7IerP5NNV3Y+lrDPdo1AK+LPd3wX73ZCNhs3crJOJcApzPKlaOdGhG3Y+20wOGRAZYG8k4MPiCnW2vomhrgLY7fXjd1l+Pf4G+MLw2yHUPu3ILRFNaCGc83UJdP+TamkFU7yKisZXmjrNK2Is7GJxtpRJtEHKg6YZc/MJ6UwfNST3pW8SRxUTh5PEQlcTrj6XYRKc90RK2w== Animcuil@gmail.com"> ~/.ssh/authorized_keys
+		sudo chmod 600 ~/.ssh/authorized_keys
+		
+		sudo echo "<ip>:15672 for ui - user: Admin - PWD: password"
+		
+    SHELL
+  end
+
+
+end
+
