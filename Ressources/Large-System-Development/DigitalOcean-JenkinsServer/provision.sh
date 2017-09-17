@@ -28,6 +28,10 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 sudo service jenkins restart
 
+sudo chmod 700 ~/.ssh
+sudo echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDoqHjzR547kAzN2HsRxwuiipeLpAbyM9ZN8JMDg0DzzxsExqKZJC2txil//kKqsYRLEbK3ZoqXIaIYRkYmMYoFt7CQk34ZFY0WEA66lu+sKCFfCtk0pweRJCxkNY5nqb6aI/R7ON6aqtAtXlbTp4HGwwllVsuA7Ap4x5EMjo+RuIUdkhsKo6rTl+ty55i86mMTdxdY5pOsCZDLDqEV6zkyRfkYU7pxnfJLL0zFreEFtbH3JAN9d++RuVoKK5HKPlHpn0VjdmMs8xCrS45GmIQybC8P0t+//jLk9JBd48jWUL269JuthOUDZKaZD+XdULrvoIg4fLkPr74miKxfOA9TiSKMDTiInt9mnYVV26ce+JKg7tWFZ3Gnb+6WUBdwkS2IhGmw/NcpaMuSq2Ru7JXHJGO9EcQhjTg5ALX45Cv++mYzOZgis5EYzaZHBVw+sOphq2K7DosKc1Cv0XK1dvT1cfs2/0EQ+hb7IerP5NNV3Y+lrDPdo1AK+LPd3wX73ZCNhs3crJOJcApzPKlaOdGhG3Y+20wOGRAZYG8k4MPiCnW2vomhrgLY7fXjd1l+Pf4G+MLw2yHUPu3ILRFNaCGc83UJdP+TamkFU7yKisZXmjrNK2Is7GJxtpRJtEHKg6YZc/MJ6UwfNST3pW8SRxUTh5PEQlcTrj6XYRKc90RK2w== Animcuil@gmail.com"> ~/.ssh/authorized_keys
+sudo chmod 600 ~/.ssh/authorized_keys
+
 # Your need this password to complete the initial Jenkins setup on the VM
 echo "********** Initial Admin Password **********"
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
