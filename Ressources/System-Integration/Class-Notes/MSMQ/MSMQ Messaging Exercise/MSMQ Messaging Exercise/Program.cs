@@ -22,7 +22,6 @@ namespace MSMQ_Messaging_Exercise
         {
             Program player1 = new Program() { WhoAmI = "Player1", Game_in_session = false };
             player1.GetChannel();
-            Console.WriteLine((GameHand)new Random(DateTime.UtcNow.Millisecond).Next(0, 3));
             
             while (true)
             {
