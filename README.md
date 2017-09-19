@@ -2,9 +2,7 @@
 
 ## Tasks ¤Need work
 - Discrete math : Predicates program (Look in moodle for description)
-- System integration : RabbitMQ tutorials 1-3(rabbitmq get started), exercises 3 versions of student enrollment system.
-- System integration : Deploy own RabbitMQ server
-- Hackernews: Create CI / CD with vagrant, docker and jenkins.
+- System integration : exercises 3 versions of student enrollment system.
 
 ## Work Repositories
 
