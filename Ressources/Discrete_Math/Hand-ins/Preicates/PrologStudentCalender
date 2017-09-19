@@ -1,0 +1,28 @@
+parrent(lsd, daniel).
+parrent(lsd, emmely).
+parrent(lsd, kristian).
+parrent(dm, daniel).
+parrent(dm, kristian).
+parrent(bi, emmely).
+parrent(si, daniel).
+parrent(si, emmely).
+parrent(si, kristian).
+parrent(ufo, daniel).
+parrent(ufo, emmely).
+parrent(ufo, kristian).
+
+room(203, lsd).
+room(103, dm).
+room(201, ufo).
+room(203, si).
+room(204, bi).
+
+date(lsd, 13/9).
+date(lsd, 20/9).
+date(lsd, 27/9).
+date(dm, 26/9).
+date(bi, 19/9).
+date(ufo, 25/9).
+date(ufo, 30/9).
+
+hasclass(Person, Date, Whatroom, Class) :- date(Class, Date), parrent(Class, Person), room(Whatroom, Class).

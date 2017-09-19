@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminEnrollment_AP", "AdminEnrollment_AP\AdminEnrollment_AP.csproj", "{59CAF25D-552A-4350-BF61-7479B349648F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentEnrollment_Requester", "StudentEnrollment_AP\StudentEnrollment_Requester.csproj", "{ECC2B3BB-EBB5-4289-BEFA-BD8D0D42E15F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59CAF25D-552A-4350-BF61-7479B349648F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59CAF25D-552A-4350-BF61-7479B349648F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59CAF25D-552A-4350-BF61-7479B349648F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59CAF25D-552A-4350-BF61-7479B349648F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC2B3BB-EBB5-4289-BEFA-BD8D0D42E15F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC2B3BB-EBB5-4289-BEFA-BD8D0D42E15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC2B3BB-EBB5-4289-BEFA-BD8D0D42E15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC2B3BB-EBB5-4289-BEFA-BD8D0D42E15F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {122EA1E8-C75A-4DDD-9E17-AB743389A278}
+	EndGlobalSection
+EndGlobal

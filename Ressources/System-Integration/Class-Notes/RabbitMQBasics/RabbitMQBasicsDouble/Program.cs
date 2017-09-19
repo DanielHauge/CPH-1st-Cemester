@@ -12,7 +12,7 @@ namespace RabbitMQBasics
 {
     class Program
     {
-        public const string Host_name = "139.59.214.56";
+        public const string Host_name = "46.101.160.252";
 
         static void Main(string[] args)
         {
@@ -37,13 +37,16 @@ namespace RabbitMQBasics
 
 
 
+
+            thisprogram.PubSubRecieve("logs");
+
+
+
         }
         private static string GetMessage(string[] args)
         {
             return ((args.Length > 0) ? string.Join(" ", args) : "Hello World!");
         }
-
-
         private void BasicSendMessage(string Que_name, byte[] body)
         {
             var factory = new ConnectionFactory() { HostName = Host_name, UserName = "admin", Password = "password" };
@@ -164,6 +167,63 @@ namespace RabbitMQBasics
                 Console.ReadLine();
             }
         }
+        private void PupSubSend(string ExchangeName, byte[] body)
+        {
+            ///This example is a logging system send.
+            var factory = new ConnectionFactory() { HostName = Host_name, UserName = "admin", Password = "password" };
+            using (var connection = factory.CreateConnection())
+            using (var channel = connection.CreateModel())
+            {
+                //Declares a exchange instead of a specific que. (This way, more receivers can listen in instead of consuming on one single que.)
+                channel.ExchangeDeclare(exchange: ExchangeName, type: "fanout");
+
+
+                channel.BasicPublish(exchange: ExchangeName,
+                                     routingKey: "",
+                                     basicProperties: null,
+                                     body: body);
+                Console.WriteLine(" [x] Sent {0}", body);
+            }
+
+            Console.WriteLine(" Press [enter] to exit.");
+            Console.ReadLine();
+
+
+
+        }
+        private void PubSubRecieve(string ExchangeName)
+        {
+            var factory = new ConnectionFactory() { HostName = Host_name, UserName = "admin", Password = "password" };
+            using (var connection = factory.CreateConnection())
+            using (var channel = connection.CreateModel())
+            {
+                //Like before = Declare the que to know where to pick up messages.
+                channel.ExchangeDeclare(exchange: ExchangeName, type: "fanout");
+
+                var queueName = channel.QueueDeclare().QueueName;
+                channel.QueueBind(queue: queueName,
+                                  exchange: ExchangeName,
+                                  routingKey: "");
+
+                Console.WriteLine(" [*] Waiting for logs.");
+
+                var consumer = new EventingBasicConsumer(channel);
+                consumer.Received += (model, ea) =>
+                {
+                    var body = ea.Body;
+                    var message = Encoding.UTF8.GetString(body);
+                    Console.WriteLine(" [x] {0}", message);
+                };
+                channel.BasicConsume(queue: queueName,
+                                     autoAck: true,
+                                     consumer: consumer);
+
+                Console.WriteLine(" Press [enter] to exit.");
+                Console.ReadLine();
+            }
+        }
+
+
 
     }
 }

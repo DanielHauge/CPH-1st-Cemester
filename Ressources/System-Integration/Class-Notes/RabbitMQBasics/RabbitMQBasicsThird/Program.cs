@@ -8,7 +8,7 @@ using RabbitMQ.Client.Events;
 using RabbitMQ.Client;
 using System.Threading;
 
-namespace RabbitMQBasics
+namespace RabbitMQBasicsThird
 {
     class Program
     {
@@ -22,9 +22,11 @@ namespace RabbitMQBasics
 
             Program thisprogram = new Program();
 
+
             //Basic Messaging examples
-            //thisprogram.BasicSendMessage("BasicMessageQue", body);
-            //thisprogram.BasicReceiveMessage("BasicMessageQue");
+            //thisprogram.BasicSendMessage("BasicMessageQue", body);    ///Sender
+            //thisprogram.BasicReceiveMessage("BasicMessageQue");    ////Receiver
+
 
             //Basic worker recieve / send example.
             // ----- Sender
@@ -36,10 +38,7 @@ namespace RabbitMQBasics
             // thisprogram.WorkerReceiveMessage("task_que");
 
 
-            while (true)
-            {
-                thisprogram.PupSubSend("logs", Encoding.UTF8.GetBytes(GetMessage(args)));
-            }
+            thisprogram.PubSubRecieve("logs");
 
 
 
@@ -108,7 +107,7 @@ namespace RabbitMQBasics
 
 
             }
-            
+
         }
         private void WorkerSendMessage(string Que_name, byte[] body)
         {
@@ -122,7 +121,7 @@ namespace RabbitMQBasics
 
                 var properties = channel.CreateBasicProperties();
                 properties.Persistent = true;
-                
+
 
                 //Publish Message
                 channel.BasicPublish(exchange: "", routingKey: "task_que", basicProperties: null, body: body);
@@ -189,7 +188,7 @@ namespace RabbitMQBasics
             Console.WriteLine(" Press [enter] to exit.");
             Console.ReadLine();
 
-            
+
 
         }
         private void PubSubRecieve(string ExchangeName)

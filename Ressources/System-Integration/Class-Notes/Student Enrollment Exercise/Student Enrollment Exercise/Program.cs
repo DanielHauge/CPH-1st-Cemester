@@ -8,42 +8,13 @@ using RabbitMQ.Client.Events;
 using RabbitMQ.Client;
 using System.Threading;
 
-namespace RabbitMQBasics
+namespace Student_Enrollment_Exercise
 {
-    class Program
+    class BasicRabbitManager
     {
         public const string Host_name = "46.101.160.252";
 
-        static void Main(string[] args)
-        {
-            string message = "BasicMessageSend";  // This can be anything
-            var body = Encoding.UTF8.GetBytes(message); // This can be anything
 
-
-            Program thisprogram = new Program();
-
-            //Basic Messaging examples
-            //thisprogram.BasicSendMessage("BasicMessageQue", body);
-            //thisprogram.BasicReceiveMessage("BasicMessageQue");
-
-            //Basic worker recieve / send example.
-            // ----- Sender
-            //while (true)
-            //{
-            //    thisprogram.WorkerSendMessage("task_que", Encoding.UTF8.GetBytes(GetMessage(args)));
-            //}
-            // ------- Receiver
-            // thisprogram.WorkerReceiveMessage("task_que");
-
-
-            while (true)
-            {
-                thisprogram.PupSubSend("logs", Encoding.UTF8.GetBytes(GetMessage(args)));
-            }
-
-
-
-        }
         private static string GetMessage(string[] args)
         {
             return ((args.Length > 0) ? string.Join(" ", args) : "Hello World!");
@@ -108,7 +79,7 @@ namespace RabbitMQBasics
 
 
             }
-            
+
         }
         private void WorkerSendMessage(string Que_name, byte[] body)
         {
@@ -122,7 +93,7 @@ namespace RabbitMQBasics
 
                 var properties = channel.CreateBasicProperties();
                 properties.Persistent = true;
-                
+
 
                 //Publish Message
                 channel.BasicPublish(exchange: "", routingKey: "task_que", basicProperties: null, body: body);
@@ -189,7 +160,7 @@ namespace RabbitMQBasics
             Console.WriteLine(" Press [enter] to exit.");
             Console.ReadLine();
 
-            
+
 
         }
         private void PubSubRecieve(string ExchangeName)
