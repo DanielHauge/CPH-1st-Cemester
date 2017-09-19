@@ -1,10 +1,7 @@
 # CPHBusiness 1st Cemester Overview.
 
 ## Tasks ¤Need work
-- Discrete math : Predicates program (Look in moodle for description)
-- System integration : RabbitMQ tutorials 1-3(rabbitmq get started), exercises 3 versions of student enrollment system.
-- System integration : Deploy own RabbitMQ server
-- Hackernews: Create CI / CD with vagrant, docker and jenkins.
+- System integration : exercises 3 versions of student enrollment system.
 
 ## Work Repositories
 
@@ -38,7 +35,7 @@
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
 | Requirements Analysis                          | 30/8  |  6/9 11:00 | 10! | DONE
-| Setup of CI/CD chain with MVP                  | 14/9  | 20/9 23:59 | 10! | Started
+| Setup of CI/CD chain with MVP                  | 14/9  | 20/9 23:59 | 10! | DONE
 | Continiously Feature Development and Extension | 21/9  | N/A        | 20! | Not started
 | Handover of systems to drift                   | N/A   | 2/11       | 10! | Not started
 | Continiously Monitoring and Drift              | 2/11  | N/A        | 20! | Not started
@@ -51,7 +48,7 @@
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
 | Logic               | 1/9   | 8/9 | 10 | DONE
-| Predicates          | 5/9   | N/A | 10 | Ongoing
+| Predicates          | 5/9   | N/A | 10 | DONE
 | Set Theory          | 26/9  | N/A | 10 | Not started
 | Regular Expressions | 3/10  | N/A | 20 | Not started
 | Sequences           | 7/11  | N/A | 10 | Not started 
