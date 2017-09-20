@@ -1,7 +1,7 @@
 # CPHBusiness 1st Cemester Overview.
 
 ## Tasks ¤Need work
-- System integration : exercises 3 versions of student enrollment system.
+- 
 
 ## Work Repositories
 
