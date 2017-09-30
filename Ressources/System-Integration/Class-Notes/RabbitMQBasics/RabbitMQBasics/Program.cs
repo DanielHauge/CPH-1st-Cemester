@@ -12,7 +12,7 @@ namespace RabbitMQBasics
 {
     class Program
     {
-        public const string Host_name = "46.101.160.252";
+        public const string Host_name = "138.197.186.82";
 
         static void Main(string[] args)
         {
@@ -33,14 +33,14 @@ namespace RabbitMQBasics
             //    thisprogram.WorkerSendMessage("task_que", Encoding.UTF8.GetBytes(GetMessage(args)));
             //}
             // ------- Receiver
-            // thisprogram.WorkerReceiveMessage("task_que");
+             thisprogram.WorkerReceiveMessage("task_que");
 
-
+            /*
             while (true)
             {
                 thisprogram.PupSubSend("logs", Encoding.UTF8.GetBytes(GetMessage(args)));
             }
-
+            */
 
 
         }
