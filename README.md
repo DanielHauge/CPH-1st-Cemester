@@ -1,7 +1,6 @@
 # CPHBusiness 1st Cemester Overview.
 
 ## Tasks ¤Need work
-- Discrete math assignment.
 - LoanBroker Tasks
 - HackerNews Tasks
 
