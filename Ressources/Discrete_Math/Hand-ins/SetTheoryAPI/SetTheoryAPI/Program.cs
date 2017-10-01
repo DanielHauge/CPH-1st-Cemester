@@ -41,7 +41,7 @@ namespace SetTheoryAPI
             // This should be true.
             Console.WriteLine("is Set2_ the same as Set2?: " + SSH.Is_Sets_Equals(Set2Hash_, Set2Hash));
             
-            // Should give -1, since Set1 is a subset of set2.
+            // Should give 1, since Set2 is a subset of set1.
             Console.WriteLine("Comparing Sets of 1 and 2: "+SSH.CompareSetsEasyWay(Set1Hash, Set2Hash));
             
             // This should give "False", since -1 is not a member of set1 
@@ -53,8 +53,8 @@ namespace SetTheoryAPI
             // What is the Intersection of set2 and set3?
             Console.WriteLine("Intersection of set2 and set3?: "+ string.Join(", ", SH.__GetIntersection(Set2,Set3)));
 
-            // What is the difference on set3 and set1?
-            Console.WriteLine("The difference from set3 to set1: "+ string.Join(", ", SH.__GetDifference(Set3,Set1)));
+            // What is the difference on set3 and set1? with other words: What elements does set3 have that set1 does not have?
+            Console.WriteLine("The difference of set3 to set1: "+ string.Join(", ", SH.__GetDifference(Set3,Set1)));
 
             Console.ReadKey();
 
