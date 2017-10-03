@@ -3,7 +3,6 @@
 ## Tasks ¤Need work
 - LoanBroker Tasks
 - HackerNews Tasks
-- Discrete Math assignment (regular expressions)
 
 ## Work Repositories
 
