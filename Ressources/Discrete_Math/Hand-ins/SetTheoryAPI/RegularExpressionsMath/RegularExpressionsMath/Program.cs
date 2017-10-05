@@ -11,6 +11,7 @@ namespace RegularExpressionsMath
     {
         static void Main(string[] args)
         {
+
             var AllStates = new List<string> { "s0", "s1", "s2", "s3", "s4", "s5", "s6", "s6" }; ///// 
             var Alpha = new List<char> { 'a', 'b', 'c', 'd', 'l', 'o', 'g', 'i', 'n' }; //////////Alphabet || Sigma
             var AllStateChanges = new List<StateManager>()
@@ -24,7 +25,7 @@ namespace RegularExpressionsMath
             var FinalStates = new List<string> { "s5" };
 
 
-            var DFA = new RegExpress(AllStates, Alpha, AllStateChanges, "s0", FinalStates);
+            var DFA = new RegExpress(AllStates, Alpha, AllStateChanges, "s0", FinalStates); /// Opretter Finite State Automaton
 
             DFA.Accepts("login");
 
