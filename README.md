@@ -3,6 +3,9 @@
 ## Tasks ¤Need work
 - LoanBroker Tasks
 - HackerNews Tasks
+- UFO Assignment
+- Discrete Math Task
+- LSD use-case diagram assignment
 
 ## Work Repositories
 
