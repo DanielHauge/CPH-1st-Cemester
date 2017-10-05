@@ -41,7 +41,7 @@
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
 | Requirements Analysis                          | 30/8  |  6/9 11:00 | 10! | DONE
 | Setup of CI/CD chain with MVP                  | 14/9  | 20/9 23:59 | 10! | DONE
-| Continiously Feature Development and Extension | 21/9  | N/A        | 20! | Not started
+| Continiously Feature Development and Extension | 21/9  | N/A        | 20! | Ongoing!
 | Handover of systems to drift                   | N/A   | 2/11       | 10! | Not started
 | Continiously Monitoring and Drift              | 2/11  | N/A        | 20! | Not started
 | Systems Monitoring (Prometheus)                | 9/11  | 15/11      | 10! | Not started
@@ -54,8 +54,8 @@
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
 | Logic               | 1/9   | 8/9 | 10 | DONE
 | Predicates          | 5/9   | N/A | 10 | DONE
-| Set Theory          | 26/9  | N/A | 10 | Not started
-| Regular Expressions | 3/10  | N/A | 20 | Not started
+| Set Theory          | 26/9  | N/A | 10 | DONE
+| Regular Expressions | 3/10  | N/A | 20 | Ongoing!
 | Sequences           | 7/11  | N/A | 10 | Not started 
 | Relations           | 14/11 | N/A | 10 | Not started
 | Static Analysis     | 21/11 | N/A | 15 | Not started
@@ -63,13 +63,8 @@
 ### System Integration:
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
-| Loan Broker System Project | 20/9       | 23/10 23:59 | 70! | Not started
+| Loan Broker System Project | 20/9       | 23/10 23:59 | 70! | Ongoing!
 | Minimum-Viable Blockchain  | after 8/11 | 22/12 23:59 | 30! | Not started
-### UFO (Udvikling og Formidling:
-| Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
-| ------------- |:---------:|:-------------:|:-----------:|:---------:|
-| No assignments revealed | N/A | N/A | N/A |N/A
-
 
 
 ## Examination
