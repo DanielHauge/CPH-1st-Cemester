@@ -12,9 +12,9 @@ namespace RegularExpressionsMath
         static void Main(string[] args)
         {
 
-            var AllStates = new List<string> { "s0", "s1", "s2", "s3", "s4", "s5", "s6", "s6" }; ///// 
+            var AllStates = new List<string> { "s0", "s1", "s2", "s3", "s4", "s5", "s6", "s6" }; ///// Alle states der findes.
             var Alpha = new List<char> { 'a', 'b', 'c', 'd', 'l', 'o', 'g', 'i', 'n' }; //////////Alphabet || Sigma
-            var AllStateChanges = new List<StateManager>()
+            var AllStateChanges = new List<StateManager>() //// Laver alle statechanges (Hvad sker der når man går fra en state til en anden)
             {
                 new StateManager("s0", 'l', "s1"),
                 new StateManager("s1", 'o', "s2"),
@@ -22,12 +22,12 @@ namespace RegularExpressionsMath
                 new StateManager("s3", 'i', "s4"),
                 new StateManager("s4", 'n', "s5")
             };
-            var FinalStates = new List<string> { "s5" };
+            var FinalStates = new List<string> { "s5" }; /// Opretter final state, de states som et udtryk kan slutte på.
 
 
             var DFA = new RegExpress(AllStates, Alpha, AllStateChanges, "s0", FinalStates); /// Opretter Finite State Automaton
 
-            DFA.Accepts("login");
+            DFA.Accepts("login");  /// Tester om login er et lovligt udtryk (og dette kan lade sig gøre i state autmaton'n). PS. login er det eneste udtryk som kan lade sig gøre PT.
 
             Console.ReadLine();
         }

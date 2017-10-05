@@ -17,12 +17,12 @@ namespace RegularExpressionsMath
 
         public RegExpress(IEnumerable<string> fsm, IEnumerable<char> alphabet, IEnumerable<StateManager> changes, string start, IEnumerable<string> final)
         {
-
+            /// Assigner værdier.
             FSM = fsm.ToList();
             Alphabet = alphabet.ToList();
-            AddChange(changes);
-            AddStartState(start);
-            AddFinalStates(final);
+            AddChange(changes); //// Tilføjer alle changes (Fra state til state)
+            AddStartState(start); //// Tilføjer start state
+            AddFinalStates(final); //// Tilføjer alle final sates (De states som er lovlige at slutte på.
 
         }
 
@@ -32,24 +32,26 @@ namespace RegularExpressionsMath
             var trin = new StringBuilder();
             foreach (var Char in Case.ToCharArray())
             {
-                var change = AllStateChanges.Find(c => c.FromState == WorkingState && c.Symbol == Char); // Gets the StateChange for every char in the case
+                var change = AllStateChanges.Find(c => c.FromState == WorkingState && c.Symbol == Char); // Gets the StateChange for every char in the case (Dette vil give alle mulige statechanges som kan give de specifikke bokstaver som er i casen)
 
                 if (change == null)
                 {
-                    Console.WriteLine("Der findes ingen Statechanges der matcher, Dette er ikke et lovligt change.");
-                    Console.WriteLine(trin);
-                    return; //// Stops method if change is not existing.
+                    Console.WriteLine("Der findes ingen Statechanges der matcher, Dette er ikke et lovligt change. Der findes ingen statechange til et eller flere bokstaver der er i udtrykket");
+                    Console.WriteLine(trin); //// Disse trin blev dog fundet, dette betyder at der er nogle bokstaver som har nogle statechanges som kan give disse bokstaver.
+                    return; //// Stopper metoden og foreach loppet. Da der ikke behøver mere information til at konkludere udtrykket ikke kan lade sig gøre. Da der ikke kan findes en vej dertil.
                 }
+                
                 
                     WorkingState = change.NextState;
                     trin.Append(change + "\n");
                 
             }
-            if (FinalStates.Contains(WorkingState))
+            if (FinalStates.Contains(WorkingState)) //// Hvis den sidste state er en finalstate, betyder det at udtrykket kan lade sig gøre.
             {
                 Console.WriteLine("Acceptere dette input med trin: "+trin);
-                return; //// Stops method if everything worked out fine.
+                return; //// stopper metoden da alt er OK.
             }
+            /// Else:     - Behøver dog ikke else, da der returnes hvis alt er OK ovenfor.
 
             Console.WriteLine("Fejl ved state: "+WorkingState+" - Dette er ikke det sidste trin til at udføre om casen er accepteret, Dette funger ikke");
             Console.WriteLine(trin);

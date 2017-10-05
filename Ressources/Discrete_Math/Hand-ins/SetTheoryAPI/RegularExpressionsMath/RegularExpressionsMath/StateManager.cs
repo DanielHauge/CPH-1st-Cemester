@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RegularExpressionsMath
 {
-    public class StateManager
+    public class StateManager   //// Shoulda been called StateChange perhaps, but i am to lazy to rename it now. :P
     {
         public string FromState { get; private set; }
         public char Symbol { get; private set; }
