@@ -3,8 +3,6 @@
 ## Tasks ¤Need work
 - LoanBroker Tasks
 - HackerNews Tasks
-- UFO Assignment 1 (Literature study blog post)
-- UFO Read-up: Documentation (Github Wiki?) & Documentation slides
 - Discrete Math Task (Regular Expressions)
 
 ## Work Repositories
