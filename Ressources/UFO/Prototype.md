@@ -100,7 +100,7 @@ Upload: 729.63 Mbit/s
 curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
  ```
 
-Note: to run CSharp applications i've installed and run the following lines on the ubuntu machine:
+I've run this shell script when starting up the droplet (From Vagrantfile) for my usual Csharp things.
 
  ```bash
  curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -110,17 +110,28 @@ Note: to run CSharp applications i've installed and run the following lines on t
  sudo apt-get upgrade -y
  sudo apt-get install -y dotnet-dev-1.1.4
  sudo apt-get install -y build-essential libssl-dev
+ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+ echo "deb http://download.mono-project.com/repo/ubuntu xenial main" | sudo tee /etc/apt/sources.list.d/mono-official.list
+ sudo apt-get update
+ sudo apt-get install -y mono-devel
  ```
 
 Actions:
- - Run program with ```bash dotnet (application.dll)```
+ - Run program with ```mono myprogram.exe``` or ```dotnet myprogram.dll``` (dll if .net core and mono if .net with framework) in this case. mono program.exe
  - Wait 5 or more seconds.
  - Rinse and repeat 5 times for every location.
+
+##### Execution 3
+Try out each server with https://tools.pingdom.com/ from 3 different locations 5 times:
+- Melbourne in Australia
+- Jan Jose, california in United States
+- Stockhold in sweden.
+
 
 ### Results:
 The results is response time in seconds and miliseconds. Here is the results:
 
-Execution1:
+##### Execution 1:
 - Australia
 >- Seconds: 0 | Miliseconds: 71 (00:00:00.0713516)
 >- Seconds: 0 | Miliseconds: 60 (00:00:00.0608856)
@@ -143,4 +154,47 @@ avg responsetime: 599 miliseconds.
 >- Seconds: 0 | Miliseconds: 619 (00:00:00.6192124)
 avg responsetime: 696 miliseconds.
 
+##### Execution 2:
+- Australia
+>- Seconds: 0 | Miliseconds: 390 (00:00:00.3905766)
+>- Seconds: 0 | Miliseconds: 167 (00:00:00.1673173)
+>- Seconds: 0 | Miliseconds: 165 (00:00:00.1655632)
+>- Seconds: 0 | Miliseconds: 106 (00:00:00.1064058)
+>- Seconds: 1 | Miliseconds: 105 ( 00:00:00.1055629)
+avg responsetime: 186,6 miliseconds.
+- United States
+>- Seconds: 0 | Miliseconds: 285 ( 00:00:00.2850237)
+>- Seconds: 0 | Miliseconds: 226 (00:00:00.2266672)
+>- Seconds: 0 | Miliseconds: 266 (00:00:00.2663051)
+>- Seconds: 0 | Miliseconds: 267 (00:00:00.2677539)
+>- Seconds: 0 | Miliseconds: 247 (00:00:00.2473653)
+avg responsetime: 258,2 miliseconds.
+- United Kingdom
+>- Seconds: 0 | Miliseconds: 480 ( 00:00:00.4803129)
+>- Seconds: 0 | Miliseconds: 480 (00:00:00.4807654)
+>- Seconds: 0 | Miliseconds: 435 (00:00:00.4352782)
+>- Seconds: 0 | Miliseconds: 551 (00:00:00.5514352)
+>- Seconds: 0 | Miliseconds: 509 (00:00:00.5091944)
+avg responsetime: 491 miliseconds.
 
+##### Execution 3:
+- Request From Australia: (Results here are in ms which stands for Miliseconds)
+>- Australia Server: 656ms, 678ms, 680ms, 663ms, 658ms - avg: 667ms
+>- United States Server: 435ms, 437ms, 436ms, 434ms, 433ms - avg: 417ms
+>- United Kingdom Server: 323ms, 320ms, 318ms, 321ms, 322ms - avg: 320,8ms
+
+- Request From United States:
+>- Australia Server: 327ms, 348ms, 315ms, 346ms, 358ms - avg: 338,8ms
+>- United States Server: 152ms, 152ms, 151ms, 152ms, 146ms - avg: 150,6ms
+>- United Kingdom Server: 349ms, 348ms, 353ms, 348ms, 349ms - avg: 349,4ms
+
+- Request From Sweden:
+>- Australia Server: 48ms, 57ms, 50ms, 46ms, 46ms - avg: 49,4ms
+>- United States Server: 195ms, 199ms, 201ms, 190ms, 186ms - avg: 194,2ms
+>- United Kingdom Server: 407ms, 410ms, 410ms, 402ms, 406ms - avg: 407ms
+
+### Evaluation
+resuming the results:
+- Australia server would be this long to send the requests:
+>- Execution1
+>>- 
