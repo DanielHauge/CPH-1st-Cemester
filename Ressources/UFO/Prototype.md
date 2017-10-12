@@ -193,8 +193,59 @@ avg responsetime: 491 miliseconds.
 >- United States Server: 195ms, 199ms, 201ms, 190ms, 186ms - avg: 194,2ms
 >- United Kingdom Server: 407ms, 410ms, 410ms, 402ms, 406ms - avg: 407ms
 
-### Evaluation
-resuming the results:
-- Australia server would be this long to send the requests:
->- Execution1
->>- 
+### Evaluation of results
+resume of the results: (averages)
+- Execution 1 (on windows 10 - Csharp app run on visual studio)
+>- Denmark -> Australia -> Denmark (__275 ms__)
+>- Denmark -> United States -> Denmark (__599ms__)
+>- Denmark -> United Kingdom -> Denmark (__696ms__)
+- Execution 2 (on ubuntu 16.04 - Csharp app run with mono)
+>- London -> Australia -> London (__186,6ms__)
+>- London -> United States -> London (__258,2ms__)
+>- London -> Unites Kingdom -> London (__491ms__)
+- Execution 3 (With https://tools.pingdom.com/)
+>- Australia -> Australia -> Australia (__668ms__)
+>- Australia -> United States -> Australia (__417ms__)
+>- Australia -> United Kingdom -> Australia (__320,8ms__)
+>- United States -> Australia -> United States (__338,8ms__)
+>- United States -> United States -> United States (__150,6ms__)
+>- United States -> United Kingdom -> United States (__349,4ms__)
+>- Sweden -> Australia -> Sweden (__49,4ms__)
+>- Sweden -> United States -> Sweden (__194,2ms__)
+>- Sweden -> United Kingdom -> Sweden (__407ms__)
+These results can be rearranged to be more interesting by listing them by server and taking the average of the server from all these locations.
+
+I would like to highlight a few results in later discussion. I will flag some results to reference them later.
+
+- Australia Server:
+>- From Denmark 275ms
+>- From London 186,6ms
+>- From Australia 668ms **__(¤Flag 1)__**
+>- From United States 338,8ms
+>- From Sweden 49,4ms ----- **__(¤Flag 2)__**
+
+Average responsetime: __393,36ms__
+- United States Server:
+>- From Denmark 599ms
+>- From London 258,2ms
+>- From Australia 417ms
+>- From United States 150,6ms 
+>- From Sweden 194,2ms
+
+Average responsetime: __323,8__
+- United Kingdom Server:
+>- From Denmark 696ms
+>- From London 491 ----- **__(¤Flag 3)__**
+>- From Australia 320,8ms
+>- From United States 349,4ms
+>- From Sweden 407ms ----- 
+
+Average responsetime: __452,84ms__
+
+### Conclusion
+
+On the outlook of things, it looks like united states servers is overall faster. But as the hypothesis stated, the closer geographicly the server and client is, the faster the responsetime would be. This does not seem to be true in this case. To further prove my point, i'd like to consider flag1. The request is comming from melbourne in australia where the server is also located. But this has a wooping 668 miliseconds delay, where's a request from sweden only takes on average 49,4ms (see flag2). Another examples consider flag 3, the server in united kingdom is taking a long time to respond back to a client in london even if they are very close geographicly. the response is even slower to sweden and denmark than to australia and united states, which is absurd if geographic distance was the deciding factor in responsetime.
+
+There must be something going on which i have not factored into the prototype evaluation. more specificly how http packets travel the world. To further experiment and test newer prototypes, we would need to look into Tracerouting.
+
+But for this case, we have found the answer to which is fastest overall. Ofcause it does depend on the client, what is requesting and from where. But the United States Server is the fastest at serving a static website to about 4/5 requesters, and overall serving websites faster. http://192.81.216.124:8080 is the clear winner in this case.
