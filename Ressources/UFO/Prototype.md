@@ -213,6 +213,7 @@ resume of the results: (averages)
 >- Sweden -> Australia -> Sweden (__49,4ms__)
 >- Sweden -> United States -> Sweden (__194,2ms__)
 >- Sweden -> United Kingdom -> Sweden (__407ms__)
+
 These results can be rearranged to be more interesting by listing them by server and taking the average of the server from all these locations.
 
 I would like to highlight a few results in later discussion. I will flag some results to reference them later.
