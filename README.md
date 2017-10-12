@@ -3,9 +3,10 @@
 ## Tasks ¤Need work
 - LoanBroker Tasks
 - HackerNews Tasks
-- UFO Assignment
-- Discrete Math Task
-- LSD use-case diagram assignment
+- UFO Assignment 1 (Literature study blog post)
+- UFO Assignment 2 (Experiment and evaluation)
+- UFO Read-up: Documentation (Github Wiki?) & Documentation slides
+- Discrete Math Task (Regular Expressions)
 
 ## Work Repositories
 
