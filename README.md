@@ -1,7 +1,6 @@
 # CPHBusiness 1st Cemester Overview.
 
 ## Tasks ¤Need work
-- LoanBroker hand-in (sunday)
 - HackerNews Tasks
 - Discrete Math Task (Regular Expressions)
 
