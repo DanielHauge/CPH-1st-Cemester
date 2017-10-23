@@ -2,7 +2,7 @@
 
 ## Tasks ¤Need work
 - HackerNews Tasks
-- Discrete Math Task (Regular Expressions)
+- ReSharper
 
 ## Work Repositories
 
