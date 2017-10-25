@@ -60,7 +60,7 @@
 ### System Integration:
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
-| Loan Broker System Project | 20/9       | 23/10 23:59 | 70! | Ongoing!
+| Loan Broker System Project | 20/9       | 23/10 23:59 | 70! | DONE
 | Minimum-Viable Blockchain  | after 8/11 | 22/12 23:59 | 30! | Not started
 
 
