@@ -2,7 +2,7 @@
 
 ## Tasks ¤Need work
 - HackerNews Tasks
-- ReSharper
+- ReSharper alternativ og flere løsninger til dette
 
 ## Work Repositories
 
