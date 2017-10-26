@@ -2,9 +2,6 @@
 
 ## Tasks ¤Need work
 - HackerNews Tasks
-- ReSharper alternativ og flere løsninger til dette
-- Descrete math: controll a list of objects<users> that can go through legal actions.
-- Descrete math: Generate FSA.
 
 ## Work Repositories
 
