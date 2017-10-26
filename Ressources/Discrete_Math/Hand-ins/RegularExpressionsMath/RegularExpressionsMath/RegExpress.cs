@@ -26,8 +26,9 @@ namespace RegularExpressionsMath
 
         }
 
-        public void Accepts(string Case)
+        public bool Accepts(string Case)
         {
+            bool legalaction = true;
             var WorkingState = StartState;
             var trin = new StringBuilder();
             foreach (var Char in Case.ToCharArray())
@@ -38,7 +39,7 @@ namespace RegularExpressionsMath
                 {
                     Console.WriteLine("Der findes ingen Statechanges der matcher, Dette er ikke et lovligt change. Der findes ingen statechange til et eller flere bokstaver der er i udtrykket");
                     Console.WriteLine(trin); //// Disse trin blev dog fundet, dette betyder at der er nogle bokstaver som har nogle statechanges som kan give disse bokstaver.
-                    return; //// Stopper metoden og foreach loppet. Da der ikke behøver mere information til at konkludere udtrykket ikke kan lade sig gøre. Da der ikke kan findes en vej dertil.
+                    return false; //// Stopper metoden og foreach loppet. Da der ikke behøver mere information til at konkludere udtrykket ikke kan lade sig gøre. Da der ikke kan findes en vej dertil.
                 }
                 
                 
@@ -49,12 +50,16 @@ namespace RegularExpressionsMath
             if (FinalStates.Contains(WorkingState)) //// Hvis den sidste state er en finalstate, betyder det at udtrykket kan lade sig gøre.
             {
                 Console.WriteLine("Acceptere dette input med trin: "+trin);
-                return; //// stopper metoden da alt er OK.
+                return true; //// stopper metoden da alt er OK.
             }
-            /// Else:     - Behøver dog ikke else, da der returnes hvis alt er OK ovenfor.
+            else
+            {
+                Console.WriteLine("Lovligt: " + WorkingState + " - Dette er ikke det sidste trin til at udføre om casen er accepteret, kan ikke slutte her");
+                Console.WriteLine(trin);
+                return true;
+            }
 
-            Console.WriteLine("Fejl ved state: "+WorkingState+" - Dette er ikke det sidste trin til at udføre om casen er accepteret, Dette funger ikke");
-            Console.WriteLine(trin);
+            
         }
 
 
@@ -83,7 +88,7 @@ namespace RegularExpressionsMath
 
         private bool ChangeErIkkeAlleredeDefineret(StateManager arg)
         {
-            return AllStateChanges.Any(change => change.FromState == arg.FromState && change.Symbol == arg.Symbol); ///// Checks if the state is allready defined. If the current start state with the same symbol is allready defined.
+            return AllStateChanges.Any(change => change.FromState == arg.FromState && change.Symbol == arg.Symbol); ///// Checks if the state is alllready defined. If the current start state with the same symbol is allready defined.
         }
 
         private void AddFinalStates(IEnumerable<string> final)

@@ -1,0 +1,33 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "bento/ubuntu-16.04"
+  config.vm.network "forwarded_port", guest: 9999, host: 9999, host_ip: "127.0.0.1"
+  config.vm.network "private_network", ip: "192.168.33.10"
+  
+  config.vm.define "Linux+Docker", primary: true do |dockermachine|
+	dockermachine.vm.hostname = "Docker-Machine"
+	dockermachine.vm.provision "shell", inline: <<-SHELL
+		
+		sudo apt-get update
+		sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+		echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /etc/apt/sources.list.d/docker.list
+		sudo apt-get update
+		apt-cache policy docker-engine
+		sudo apt-get install -y docker-engine
+		
+		sudo curl -o /usr/local/bin/docker-compose -L "https://github.com/docker/compose/releases/download/1.15.0/docker-compose-$(uname -s)-$(uname -m)"
+		sudo chmod +x /usr/local/bin/docker-compose
+
+		
+		
+	SHELL
+end
+
+end
