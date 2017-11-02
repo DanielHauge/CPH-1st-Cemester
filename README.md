@@ -1,7 +1,7 @@
 # CPHBusiness 1st Cemester Overview.
 
 ## Tasks ¤Need work
-- HackerNews Tasks
+- Monitoring for HackerNews.
 
 ## Work Repositories
 
@@ -37,10 +37,10 @@
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
 | Requirements Analysis                          | 30/8  |  6/9 11:00 | 10! | DONE
 | Setup of CI/CD chain with MVP                  | 14/9  | 20/9 23:59 | 10! | DONE
-| Continiously Feature Development and Extension | 21/9  | N/A        | 20! | Ongoing!
-| Handover of systems to drift                   | N/A   | 2/11       | 10! | Not started
-| Continiously Monitoring and Drift              | 2/11  | N/A        | 20! | Not started
-| Systems Monitoring (Prometheus)                | 9/11  | 15/11      | 10! | Not started
+| Continiously Feature Development and Extension | 21/9  | N/A        | 20! | DONE
+| Handover of systems to drift                   | N/A   | 2/11       | 10! | DONE
+| Continiously Monitoring and Drift              | 2/11  | N/A        | 20! | Doing
+| Systems Monitoring (Prometheus)                | 9/11  | 15/11      | 10! | Ongoing!
 | Add Event Logging                              | 16/11 | 22/11      | 10! | Not started
 | Add Scalability (Kubernetes)                   | 23/11 | 29/11      | **10?** | Not started
 | Add Security                                   | 30/11 | 6/12       | **10?** | Not started
@@ -51,7 +51,7 @@
 | Logic               | 1/9   | 8/9 | 10 | DONE
 | Predicates          | 5/9   | N/A | 10 | DONE
 | Set Theory          | 26/9  | N/A | 10 | DONE
-| Regular Expressions | 3/10  | N/A | 20 | Ongoing!
+| Regular Expressions | 3/10  | N/A | 20 | DONE (need hand-in)
 | Sequences           | 7/11  | N/A | 10 | Not started 
 | Relations           | 14/11 | N/A | 10 | Not started
 | Static Analysis     | 21/11 | N/A | 15 | Not started
