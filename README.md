@@ -2,7 +2,7 @@
 
 ## Tasks ¤Need work
 - [Questionaire for operators documentation](https://datsoftlyngby.github.io/soft2017fall/UFO/05-Observation_and_Surveys.html)
-- Hand in math when ready
+- Math Sequences assignment
 
 ## Work Repositories
 
