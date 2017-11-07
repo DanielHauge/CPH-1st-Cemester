@@ -2,8 +2,7 @@
 
 ## Tasks ¤Need work
 - [Questionaire for operators documentation](https://datsoftlyngby.github.io/soft2017fall/UFO/05-Observation_and_Surveys.html)
-- Hand in math when ready
-- SLA + monitoring setup
+- Math Sequences assignment
 
 ## Work Repositories
 
@@ -42,7 +41,7 @@
 | Continiously Feature Development and Extension | 21/9  | N/A        | 20! | DONE
 | Handover of systems to drift                   | N/A   | 2/11       | 10! | DONE
 | Continiously Monitoring and Drift              | 2/11  | N/A        | 20! | Doing
-| Systems Monitoring (Prometheus)                | 9/11  | 15/11      | 10! | Ongoing!
+| Systems Monitoring (Prometheus)                | 9/11  | 15/11      | 10! | DONE
 | Add Event Logging                              | 16/11 | 22/11      | 10! | Not started
 | Add Scalability (Kubernetes)                   | 23/11 | 29/11      | **10?** | Not started
 | Add Security                                   | 30/11 | 6/12       | **10?** | Not started
