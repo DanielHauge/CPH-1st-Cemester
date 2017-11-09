@@ -3,6 +3,8 @@
 ## Tasks ¤Need work
 - [Questionaire for operators documentation](https://datsoftlyngby.github.io/soft2017fall/UFO/05-Observation_and_Surveys.html)
 - Hand-in Math when up
+- Grafana Alerts
+- Loggin implementation in code.
 
 ## Work Repositories
 
