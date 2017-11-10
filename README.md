@@ -3,7 +3,6 @@
 ## Tasks ¤Need work
 - [Questionaire for operators documentation](https://datsoftlyngby.github.io/soft2017fall/UFO/05-Observation_and_Surveys.html)
 - Hand-in Math when up
-- Grafana Alerts
 - ELK stack up and running
 - Loggin implementation in code.
 
