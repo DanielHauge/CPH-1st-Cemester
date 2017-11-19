@@ -3,8 +3,7 @@
 ## Tasks ¤Need work
 - [Questionaire for operators documentation](https://datsoftlyngby.github.io/soft2017fall/UFO/05-Observation_and_Surveys.html)
 - Hand-in Math when up
-- Loggin implementation in code.
-- Docker swarm setup.
+
 
 ## Work Repositories
 
