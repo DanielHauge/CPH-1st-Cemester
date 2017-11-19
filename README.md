@@ -43,8 +43,8 @@
 | Handover of systems to drift                   | N/A   | 2/11       | 10! | DONE
 | Continiously Monitoring and Drift              | 2/11  | N/A        | 20! | Doing
 | Systems Monitoring (Prometheus)                | 9/11  | 15/11      | 10! | DONE
-| Add Event Logging                              | 16/11 | 22/11      | 10! | Ongoing
-| Add Scalability (Kubernetes)                   | 23/11 | 29/11      | **10?** | Not started
+| Add Event Logging                              | 16/11 | 22/11      | 10! | DONE
+| Add Scalability (Kubernetes)                   | 23/11 | 29/11      | **10?** | Ongoing
 | Add Security                                   | 30/11 | 6/12       | **10?** | Not started
 | Reflection and preparation of project report   | N/A   | 14.12      | 10! | Not started
 ### Discrete Mathematics:
@@ -54,8 +54,8 @@
 | Predicates          | 5/9   | N/A | 10 | DONE
 | Set Theory          | 26/9  | N/A | 10 | DONE
 | Regular Expressions | 3/10  | N/A | 20 | DONE
-| Sequences           | 7/11  | N/A | 10 | DONE (Need hand-in)
-| Relations           | 14/11 | N/A | 10 | Not started
+| Sequences           | 7/11  | N/A | 10 | DONE
+| Relations           | 14/11 | N/A | 10 | DONE
 | Static Analysis     | 21/11 | N/A | 15 | Not started
 | Design by Contract  | 28/11 | N/A | 15 | Not started
 ### System Integration:
