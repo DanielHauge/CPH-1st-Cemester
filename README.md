@@ -44,7 +44,7 @@
 | Continiously Monitoring and Drift              | 2/11  | N/A        | 20! | Doing
 | Systems Monitoring (Prometheus)                | 9/11  | 15/11      | 10! | DONE
 | Add Event Logging                              | 16/11 | 22/11      | 10! | DONE
-| Add Scalability (Kubernetes)                   | 23/11 | 29/11      | **10?** | Ongoing
+| Add Scalability (Kubernetes)                   | 23/11 | 29/11      | **10?** | DONE
 | Add Security                                   | 30/11 | 6/12       | **10?** | Not started
 | Reflection and preparation of project report   | N/A   | 14.12      | 10! | Not started
 ### Discrete Mathematics:
