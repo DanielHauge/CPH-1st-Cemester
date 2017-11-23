@@ -65,5 +65,6 @@
 
 ## Examination
  - [Examination Catalogue - Detailed Exam Info](https://efif.sharepoint.com/sites/cph/Lyngby/_layouts/15/guestaccess.aspx?docid=08359e3281bab4316ba686686597ccd1d&authkey=Ac1u0VczZABKH9DV3hOjgPg)
+ - [Exam Dates](https://efif.sharepoint.com/sites/cph/administration/Delte%20dokumenter/Forms/AllItems.aspx?slrid=4eb62f9e%2D207a%2D4000%2D9744%2D3d43d96fbc9e&FolderCTID=0x012000437000E408CA634F9A84CCEB47B34920&id=%2Fsites%2Fcph%2Fadministration%2FDelte%20dokumenter%2FStudieadministration%2FEksamen%2FTil%20Moodle%2FLyngby%2FSoftwareudvikling%20%2D%20Software%20Development%2F1st%20%26%202nd%20semester%2FEksamensdatoer%20SOFT%201%2E%262%2E%20semester%2Epdf&parent=%2Fsites%2Fcph%2Fadministration%2FDelte%20dokumenter%2FStudieadministration%2FEksamen%2FTil%20Moodle%2FLyngby%2FSoftwareudvikling%20%2D%20Software%20Development%2F1st%20%26%202nd%20semester)
  - [Examination Appendix - Quick overview with dates, studypoints and subjects](https://efif.sharepoint.com/sites/cph/Lyngby/_layouts/15/guestaccess.aspx?docid=056aa4bea28034c589122bb4ac5d36f16&authkey=AU-b7BlriEhRLwGW8fRbKlk)
 
