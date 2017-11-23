@@ -2,6 +2,7 @@
 
 ## Tasks ¤Need work
 - Discrete math 6a
+- Security Hand-in (LSD)
 
 ## Work Repositories
 
