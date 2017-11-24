@@ -3,7 +3,6 @@
 ## Tasks ¤Need work
 - Discrete math 6a
 - Security Hand-in (LSD)
-- Read SI materials [Here](https://github.com/datsoftlyngby/soft2017fall-system-integration-teaching-material/blob/master/preparation/session13.md)
 - **?!?** Java Error Inserter
 
 ## Work Repositories
