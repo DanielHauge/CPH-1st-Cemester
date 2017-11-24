@@ -1,7 +1,6 @@
 # CPHBusiness 1st Cemester Overview.
 
 ## Tasks ¤Need work
-- Discrete math 6a
 - Security Hand-in (LSD)
 - **?!?** Java Error Inserter
 
