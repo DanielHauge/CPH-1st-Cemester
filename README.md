@@ -3,7 +3,6 @@
 ## Tasks ¤Need work
 - Security OWTF stuff
 - Security Hand-in (LSD)
-- **?!?** Java Error Inserter
 
 ## Work Repositories
 
