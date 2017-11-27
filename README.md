@@ -1,7 +1,6 @@
 # CPHBusiness 1st Cemester Overview.
 
 ## Tasks ¤Need work
-- Security OWTF stuff
 - Security Hand-in (LSD)
 
 ## Work Repositories
