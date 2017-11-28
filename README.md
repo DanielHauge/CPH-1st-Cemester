@@ -2,6 +2,7 @@
 
 ## Tasks ¤Need work
 - Security Hand-in (LSD)
+- Discrete math assigment 7
 
 ## Work Repositories
 
