@@ -55,8 +55,8 @@
 | Regular Expressions | 3/10  | N/A | 20 | DONE
 | Sequences           | 7/11  | N/A | 10 | DONE
 | Relations           | 14/11 | N/A | 10 | DONE
-| Static Analysis     | 21/11 | N/A | 15 | Ongoing
-| Design by Contract  | 28/11 | N/A | 15 | Not started
+| Static Analysis     | 21/11 | N/A | 15 | DONE
+| Design by Contract  | 28/11 | N/A | 15 | DONE (semi)+ need hand-in
 ### System Integration:
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
