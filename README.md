@@ -1,8 +1,8 @@
 # CPHBusiness 1st Cemester Overview.
 
 ## Tasks ¤Need work
-- Security Hand-in (LSD)
-- Discrete math assigment 7
+- Discrete math assigment 7 (Semi finished)
+- Block chain project tasks
 
 ## Work Repositories
 
