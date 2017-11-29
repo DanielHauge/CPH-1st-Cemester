@@ -9,6 +9,7 @@
 #### [Papers Repo](https://github.com/DanielHauge/CPHBusiness_Papers)
 #### [HackerNews](https://github.com/DanielHauge/HackerNews-Grp8)
 #### [LoanBroker](https://github.com/Retroperspect/LoanBroker-Group8)
+#### [BlockLand](https://github.com/DanielHauge/BlockLand)
 
 ## Lecture Materials
 
