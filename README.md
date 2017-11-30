@@ -45,7 +45,7 @@
 | Systems Monitoring (Prometheus)                | 9/11  | 15/11      | 10! | DONE
 | Add Event Logging                              | 16/11 | 22/11      | 10! | DONE
 | Add Scalability (Kubernetes)                   | 23/11 | 29/11      | **10?** | DONE
-| Add Security                                   | 30/11 | 6/12       | **10?** | Ongoing
+| Add Security                                   | 30/11 | 6/12       | **10?** | DONE
 | Reflection and preparation of project report   | N/A   | 14.12      | 10! | Not started
 ### Discrete Mathematics:
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
@@ -62,7 +62,7 @@
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
 | Loan Broker System Project | 20/9       | 23/10 23:59 | 70! | DONE
-| Minimum-Viable Blockchain  | after 8/11 | 22/12 23:59 | 30! | Not started
+| Minimum-Viable Blockchain  | after 8/11 | 22/12 23:59 | 30! | Ongoing
 
 
 ## Examination
