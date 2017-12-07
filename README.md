@@ -3,6 +3,8 @@
 ## Tasks ¤Need work
 - Discrete math assigment 7 (Semi finished)
 - Block chain project tasks
+- UFO Blog
+- LSD Reflection report
 
 ## Work Repositories
 
@@ -41,7 +43,7 @@
 | Setup of CI/CD chain with MVP                  | 14/9  | 20/9 23:59 | 10! | DONE
 | Continiously Feature Development and Extension | 21/9  | N/A        | 20! | DONE
 | Handover of systems to drift                   | N/A   | 2/11       | 10! | DONE
-| Continiously Monitoring and Drift              | 2/11  | N/A        | 20! | Doing
+| Continiously Monitoring and Drift              | 2/11  | N/A        | 20! | DONE
 | Systems Monitoring (Prometheus)                | 9/11  | 15/11      | 10! | DONE
 | Add Event Logging                              | 16/11 | 22/11      | 10! | DONE
 | Add Scalability (Kubernetes)                   | 23/11 | 29/11      | **10?** | DONE
