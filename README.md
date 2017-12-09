@@ -11,6 +11,7 @@
 #### [HackerNews](https://github.com/DanielHauge/HackerNews-Grp8)
 #### [LoanBroker](https://github.com/Retroperspect/LoanBroker-Group8)
 #### [BlockLand](https://github.com/DanielHauge/BlockLand)
+#### [UFO](https://github.com/Retroperspect/UFO_blog)
 
 ## Lecture Materials
 
