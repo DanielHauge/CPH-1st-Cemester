@@ -2,7 +2,6 @@
 
 ## Tasks ¤Need work
 - Block chain project tasks
-- UFO Blog
 - LSD Reflection report
 
 ## Work Repositories
