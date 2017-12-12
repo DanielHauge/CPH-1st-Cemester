@@ -47,7 +47,7 @@
 | Add Event Logging                              | 16/11 | 22/11      | 10! | DONE
 | Add Scalability (Kubernetes)                   | 23/11 | 29/11      | **10?** | DONE
 | Add Security                                   | 30/11 | 6/12       | **10?** | DONE
-| Reflection and preparation of project report   | N/A   | 14.12      | 10! | Not started
+| Reflection and preparation of project report   | N/A   | 14.12      | 10! | Ongoing
 ### Discrete Mathematics:
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
