@@ -1,8 +1,7 @@
 # CPHBusiness 1st Cemester Overview.
 
 ## Tasks ¤Need work
-- Block chain project tasks
-- LSD Reflection report
+- Block chain project finalize
 - UFO Feedback 1-2 pages (Indi)
 
 ## Work Repositories
