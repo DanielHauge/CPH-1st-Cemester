@@ -2,7 +2,7 @@
 
 ## Tasks ¤Need work
 - Block chain project hand-in
-- UFO Feedback 1-2 pages (Indi)
+- UFO hand-in
 
 ## Work Repositories
 
