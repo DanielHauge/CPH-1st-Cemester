@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  designbycontract:
+    image: designbycontract
+    build:
+      context: .\DesignByContract
+      dockerfile: Dockerfile
