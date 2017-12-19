@@ -1,8 +1,17 @@
 # CPHBusiness 1st Cemester Overview.
 
-## Tasks ¤Need work
-- Block chain project hand-in
-- UFO hand-in
+## Exam:
+- LSD | Date: 
+> Examination form: •Oral group exams •The exam starts with a ten minutes group presentation about the Loan Broker System. Subsequently, discussion with the examiners and the group about projects, technologies, design decisions, their impact, etc.•The exam will last in total 10 minutes per student, but at least 30 minutes pr. group.The course comprises two bigger tasks/projects. The Loan Broker Project and constructions of a   Blockchain. For both of those systems the students hand-in maintenance documentation together with the projects. The systems together with the maintenance documentations should be brought to the exam. Note however, the handed-in material is not part of the exam evaluation (er ikke eksamensgrundlag)
+>- $Presentation
+>- $Read-Up
+- SI | Date:
+> Examination form: •Oral group exam.•The students have in their groups certain roles like product owner, architect, lead developer, devops engineer, quality assurance/testing lead, etc.•The groups develop their projects with the help of an issues tracker. These issues together with the linked solutions (commits) form their development diary. •In the end of the class each group hands-in a project report, in which they reflect on important issues, their solutions and corresponding problems out of perspective of the respective roles.•The exam will last in total 10 minutes per student. That is, a five-person group has a 50 minutes exam.The exam thus starts from this project report. There will not be predefined questions to draw. But the following questions are of course related to the curriculum.
+>- $Presentation
+>- $Read-Up
+- DM | Date:
+> Skills and competenciesThe student will be able to:•Reason for the correctness of statements using Boolean algebra and truth tables•Write small programs in a program based on predicate logic•Understand the properties of sets and operations on sets•Implement and use regular expression as a finite-state automaton to evaluate a language.•Optimize code using induction rules, understand the basics of recursion •Understand the properties of relations and the basis of databases and static analysis•Create simple static analysis and write code in a Design by Contract language (C#)
+>- $Read-Up
 
 ## Work Repositories
 
