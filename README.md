@@ -92,12 +92,12 @@
 | Sequences           | 7/11  | N/A | 10 | DONE
 | Relations           | 14/11 | N/A | 10 | DONE
 | Static Analysis     | 21/11 | N/A | 15 | DONE
-| Design by Contract  | 28/11 | N/A | 15 | DONE need hand-in
+| Design by Contract  | 28/11 | N/A | 15 | DONE
 ### System Integration:
 | Assigments    | Hand-out  | Hand-in       | Studypoints | Status    |     
 | ------------- |:---------:|:-------------:|:-----------:|:---------:|
 | Loan Broker System Project | 20/9       | 23/10 23:59 | 70! | DONE
-| Minimum-Viable Blockchain  | after 8/11 | 22/12 23:59 | 30! | DONE - Allmost
+| Minimum-Viable Blockchain  | after 8/11 | 22/12 23:59 | 30! | DONE
 
 
 ## Examination
