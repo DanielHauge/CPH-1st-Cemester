@@ -1,18 +1,18 @@
 # CPHBusiness 1st Cemester Overview.
 
 ## Exam:
-* System Integration | Date: 
+* System Integration | Date: 5. jan - 14:30 to 15:00
    * Examination form: 
      * Oral group exams 
      * The exam starts with a ten minutes group presentation about the Loan Broker System. Subsequently, discussion with the examiners and the group about projects, technologies, design decisions, their impact, etc.
      * The exam will last in total 10 minutes per student, but at least 30 minutes pr. group.
-   * The course comprises two bigger tasks/projects. The Loan Broker Project and constructions of a   Blockchain. For both of those systems the students hand-in maintenance documentation together with the projects. The systems together with the maintenance documentations should be brought to the exam. Note however, the handed-in material is not part of the exam evaluation (er ikke eksamensgrundlag)
+   * The course comprises two bigger tasks/projects. The Loan Broker Project and constructions of a Blockchain. For both of those systems the students hand-in maintenance documentation together with the projects. The systems together with the maintenance documentations should be brought to the exam. Note however, the handed-in material is not part of the exam evaluation (er ikke eksamensgrundlag)
  * $Presentation
  * $Read-Up
  
 -----------
  
-*  Large Systems Development | Date:
+*  Large Systems Development | Date: 12. jan - 13:30 to 14:00
     * Examination Form:
       * Oral group exam.
       * The students have in their groups certain roles like product owner, architect, lead developer, devops engineer, quality assurance/testing lead, etc.
@@ -25,7 +25,7 @@
     
 ----------
 
-* DM | Date:
+* DM | Date: 17-19. jan
   * Exam: Skills and competencies the student will be able to:
     * Reason for the correctness of statements using Boolean algebra and truth tables
     * Write small programs in a program based on predicate logic
