@@ -1,7 +1,7 @@
 # CPHBusiness 1st Cemester Overview.
 
 ## Exam:
-* System Integration | Date: 5. jan - 14:30 to 15:00
+* System Integration | Date: 5. jan - 11:00 to 11:30
    * Examination form: 
      * Oral group exams 
      * The exam starts with a ten minutes group presentation about the Loan Broker System. Subsequently, discussion with the examiners and the group about projects, technologies, design decisions, their impact, etc.
