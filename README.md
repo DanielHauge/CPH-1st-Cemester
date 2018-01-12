@@ -2,18 +2,6 @@
 
 ## Exam:
  
-*  Large Systems Development | Date: 12. jan - 13:30 to 14:00
-    * Examination Form:
-      * Oral group exam.
-      * The students have in their groups certain roles like product owner, architect, lead developer, devops engineer, quality assurance/testing lead, etc.
-      * The groups develop their projects with the help of an issues tracker. These issues together with the linked solutions (commits) form their development diary. 
-      * In the end of the class each group hands-in a project report, in which they reflect on important issues, their solutions and corresponding problems out of perspective of the respective roles.
-      * The exam will last in total 10 minutes per student. That is, a five-person group has a 50 minutes exam.
-    * The exam thus starts from this project report. There will not be predefined questions to draw. But the following questions are of course related to the curriculum.
-  * $ Presentation:
-  * $ Read-up
-    
-----------
 
 * DM | Date: 17-19. jan
   * Exam: Skills and competencies the student will be able to:
