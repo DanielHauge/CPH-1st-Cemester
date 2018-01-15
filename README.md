@@ -1,21 +1,5 @@
 # CPHBusiness 1st Cemester Overview.
 
-## Exam:
- 
-
-* DM | Date: 17-19. jan
-  * Exam: Skills and competencies the student will be able to:
-    * Reason for the correctness of statements using Boolean algebra and truth tables
-    * Write small programs in a program based on predicate logic
-    * Understand the properties of sets and operations on sets
-    * Implement and use regular expression as a finite-state automaton to evaluate a language.
-    * Optimize code using induction rules, understand the basics of recursion 
-    * Understand the properties of relations and the basis of databases and static analysis
-    * Create simple static analysis and write code in a Design by Contract language (C#)
-* $Read-Up
-
------------
-
 ## Work Repositories
 
 #### [Papers Repo](https://github.com/DanielHauge/CPHBusiness_Papers)
