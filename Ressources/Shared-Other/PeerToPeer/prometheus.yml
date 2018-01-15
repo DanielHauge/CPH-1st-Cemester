@@ -1,0 +1,53 @@
+global:
+  scrape_interval:     15s # By default, scrape targets every 15 seconds.
+
+  # Attach these labels to any time series or alerts when communicating with
+  # external systems (federation, remote storage, Alertmanager).
+  external_labels:
+    monitor: 'CPHBusiness monitor'
+
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: 'prometheus'
+    # Override the global default and scrape targets from this job every 5 seconds.
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['localhost:9090']
+
+
+  - job_name: 'Node1'
+    scrape_interval: 5s
+    static_configs:
+       - targets: ['Node1:8080']
+
+  - job_name: 'Node2'
+    scrape_interval: 5s
+    static_configs:
+       - targets: ['Node2:8080']
+
+  - job_name: 'Node3'
+    scrape_interval: 5s
+    static_configs:
+       - targets: ['Node3:8080']
+
+  - job_name: 'Node4'
+    scrape_interval: 5s
+    static_configs:
+       - targets: ['Node4:8080']
+
+  - job_name: 'Node5'
+    scrape_interval: 5s
+    static_configs:
+       - targets: ['Node5:8080']
+
+  - job_name: 'Node6'
+    scrape_interval: 5s
+    static_configs:
+       - targets: ['Node6:8080']
+
+  - job_name: 'Node7'
+    scrape_interval: 5s
+    static_configs:
+       - targets: ['Node7:8080']
